@@ -113,6 +113,122 @@ return [
         'emergency' => [
             'path' => storage_path('logs/laravel.log'),
         ],
+
+        //====================LOG E-COMMERCE========================
+        'user_activity' => [
+            'driver' => 'daily',
+            'path' => storage_path('logs/user_activity/user_activity.log'),
+            'level' => 'info',
+            'days' => 1,
+            //'tap' => [App\Logging\CustomizeFormatter::class],
+            'maxsize' => 1024, // Ukuran maksimum file log (dalam kilobita)
+            //'maxfiles' => 5, // Opsional: Jumlah file log yang akan dipertahankan
+            'timezone' => 'Asia/Jakarta',
+        ],
+
+        'customer_retention' => [
+            'driver' => 'daily',
+            'path' => storage_path('logs/customer_retention/customer_retention.log'),
+            'level' => 'info',
+            'days' => 30,
+            'timezone' => 'Asia/Jakarta',
+        ],
+
+        'inventory' => [
+            'driver' => 'daily',
+            'path' => storage_path('logs/inventory/inventory.log'),
+            'level' => 'info',
+            'days' => 30,
+            'timezone' => 'Asia/Jakarta',
+        ],
+
+        'product_activity' => [
+            'driver' => 'daily',
+            'path' => storage_path('logs/product_activity/product_activity.log'),
+            'level' => 'info',
+            'days' => 30,
+            'timezone' => 'Asia/Jakarta',
+        ],
+
+        'discount_coupon' => [
+            'driver' => 'daily',
+            'path' => storage_path('logs/discount_coupon/discount_coupon.log'),
+            'level' => 'info',
+            'days' => 30,
+            'timezone' => 'Asia/Jakarta',
+        ],
+
+        'promotion_performance' => [
+            'driver' => 'daily',
+            'path' => storage_path('logs/promotion_performance/promotion_performance.log'),
+            'level' => 'info',
+            'days' => 30,
+            'timezone' => 'Asia/Jakarta',
+        ],
+
+        'shipping' => [
+            'driver' => 'daily',
+            'path' => storage_path('logs/shipping/shipping.log'),
+            'level' => 'info',
+            'days' => 30,
+            'timezone' => 'Asia/Jakarta',
+        ],
+
+        'transaction' => [
+            'driver' => 'daily',
+            'path' => storage_path('logs/transactions/transactions.log'),
+            'level' => 'info',
+            'days' => 30,
+            'timezone' => 'Asia/Jakarta',
+        ],
+
+        'payment' => [
+            'driver' => 'daily',
+            'path' => storage_path('logs/payment/payment.log'),
+            'level' => 'info',
+            'days' => 30,
+            'timezone' => 'Asia/Jakarta',
+        ],
+
+        'customer_service' => [
+            'driver' => 'daily',
+            'path' => storage_path('logs/customer_service/customer_service.log'),
+            'level' => 'info',
+            'days' => 30,
+            'timezone' => 'Asia/Jakarta',
+        ],
+
+        'security' => [
+            'driver' => 'daily',
+            'path' => storage_path('logs/security/security.log'),
+            'level' => 'info',
+            'days' => 30,
+            'timezone' => 'Asia/Jakarta',
+        ],
+
+        'performance' => [
+            'driver' => 'daily',
+            'path' => storage_path('logs/performance/performance.log'),
+            'level' => 'info',
+            'days' => 30,
+            'timezone' => 'Asia/Jakarta',
+        ],
+
+        'analytics' => [
+            'driver' => 'daily',
+            'path' => storage_path('logs/analytics/analytics.log'),
+            'level' => 'info',
+            'days' => 30,
+            'timezone' => 'Asia/Jakarta',
+        ],
+
+        'third_party_integration' => [
+            'driver' => 'daily',
+            'path' => storage_path('logs/third_party_integration/third_party_integration.log'),
+            'level' => 'info',
+            'days' => 30,
+            'timezone' => 'Asia/Jakarta',
+        ],
     ],
 
 ];
