@@ -7,6 +7,10 @@ use Illuminate\Support\Facades\Log;
 
 class Administrator extends Controller
 {
+    public function index()
+    {
+        echo "Dashboard";
+    }
     public function ceklog()
     {
         Log::channel('transaction')->info('Transaksi berhasil: baju bekas');
@@ -24,6 +28,6 @@ class Administrator extends Controller
         Log::channel('customer_retention')->info('Analisis retensi pelanggan: giat belanja');
         Log::channel('third_party_integration')->info('Integrasi dengan pihak ketiga: kami sudah bayarkan');
 
-        return view('global_variabel');
+        return view('form_login');
     }
 }

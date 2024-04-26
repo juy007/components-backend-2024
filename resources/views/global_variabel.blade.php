@@ -7,6 +7,6 @@
 </head>
 <body>
     <h4>Global Variabel</h4>
-    <h4>{{ $domain_master }}</h4>
+    <h4>{{ $url_domain }}====={{ $url_api }}</h4>
 </body>
 </html>

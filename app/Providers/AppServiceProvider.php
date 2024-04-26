@@ -29,6 +29,8 @@ class AppServiceProvider extends ServiceProvider
 
         // Anda juga dapat menggunakan logika bisnis untuk menentukan nilai variabel global
         $nilaiDinamis = 'http://127.0.0.1:8000/';// logika bisnis untuk menentukan nilai variabel;
-        View::share('domain_master', $nilaiDinamis);
+        View::share('url_domain', $nilaiDinamis);
+        View::share('url_api', 'http://127.0.0.1:8000/api/');
+        View::share('url_assets', 'http://127.0.0.1:8000/');
     }
 }

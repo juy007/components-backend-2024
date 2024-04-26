@@ -121,7 +121,7 @@ return [
             'level' => 'info',
             'days' => 1,
             //'tap' => [App\Logging\CustomizeFormatter::class],
-            'maxsize' => 1024, // Ukuran maksimum file log (dalam kilobita)
+           // 'maxsize' => 1024, // Ukuran maksimum file log (dalam kilobita)
             //'maxfiles' => 5, // Opsional: Jumlah file log yang akan dipertahankan
             'timezone' => 'Asia/Jakarta',
         ],
