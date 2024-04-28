@@ -10,10 +10,15 @@
 
     <form method="POST" action="{{ url('admin-process-login') }}">
         @csrf
-        <input type="email" name="email" placeholder="Email" required autofocus>
-        <input type="password" name="password" placeholder="Password" required>
+        <input type="email" name="email" placeholder="Email" value="admin@admin.com" required autofocus>
+        <input type="password" name="password" value="admin" placeholder="Password" required>
         <button type="submit">Login</button>
     </form>
+    @if($errors->has('email'))
+    <div class="alert alert-danger">
+        {{ $errors->first('email') }}
+    </div>
+@endif
 
 </body>
 </html>

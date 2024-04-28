@@ -9,7 +9,7 @@ class Administrator extends Controller
 {
     public function index()
     {
-        echo "Dashboard";
+        return view('admin.dashboard');
     }
     public function ceklog()
     {

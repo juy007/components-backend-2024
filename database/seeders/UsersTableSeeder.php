@@ -18,8 +18,8 @@ class UsersTableSeeder extends Seeder
            // Insert data pengguna
            DB::table('users')->insert([
             'name' => 'John Doe',
-            'email' => 'john@example.com',
-            'password' => Hash::make('password123'),
+            'email' => 'user@user.com',
+            'password' => Hash::make('user'),
             // tambahkan kolom lain jika diperlukan
             'created_at' => now(),
             'updated_at' => now(),

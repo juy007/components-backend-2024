@@ -36,11 +36,20 @@ return [
     */
 
     'guards' => [
+        'admin' => [
+            'driver' => 'session',
+            'provider' => 'admins',
+        ],
+        
         'web' => [
             'driver' => 'session',
             'provider' => 'users',
         ],
+
     ],
+
+    // config/auth.php
+
 
     /*
     |--------------------------------------------------------------------------
@@ -62,7 +71,12 @@ return [
     'providers' => [
         'users' => [
             'driver' => 'eloquent',
-            'model' => App\Models\User::class,
+            'model' => App\Models\Users::class,
+        ],
+
+        'admins' => [
+            'driver' => 'eloquent',
+            'model' => App\Models\Admin::class,
         ],
 
         // 'users' => [
