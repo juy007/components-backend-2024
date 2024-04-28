@@ -14,9 +14,9 @@
         <input type="password" name="password" value="admin" placeholder="Password" required>
         <button type="submit">Login</button>
     </form>
-    @if($errors->has('email'))
+    @if($errors->has('notif_login'))
     <div class="alert alert-danger">
-        {{ $errors->first('email') }}
+        {{ $errors->first('notif_login') }}
     </div>
 @endif
 

@@ -7422,3 +7422,13 @@
 #45 C:\\xampp\\htdocs\\components\\backend\\server.php(21): require_once('C:\\\\xampp\\\\htdocs...')
 #46 {main}
 "} 
+[2024-04-28 18:41:37] local.ERROR: There are no commands defined in the "breeze" namespace. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\NamespaceNotFoundException(code: 0): There are no commands defined in the \"breeze\" namespace. at C:\\xampp\\htdocs\\components\\backend\\vendor\\symfony\\console\\Application.php:650)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\components\\backend\\vendor\\symfony\\console\\Application.php(701): Symfony\\Component\\Console\\Application->findNamespace('breeze')
+#1 C:\\xampp\\htdocs\\components\\backend\\vendor\\symfony\\console\\Application.php(259): Symfony\\Component\\Console\\Application->find('breeze:install')
+#2 C:\\xampp\\htdocs\\components\\backend\\vendor\\symfony\\console\\Application.php(171): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 C:\\xampp\\htdocs\\components\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Application.php(94): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 C:\\xampp\\htdocs\\components\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(129): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 C:\\xampp\\htdocs\\components\\backend\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#6 {main}
+"} 

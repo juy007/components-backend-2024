@@ -32,7 +32,7 @@ class Admin_login extends Controller
         }
         
         // Jika autentikasi gagal
-        return back()->withErrors(['email' => 'Email atau password salah']);
+        return back()->withErrors(['notif_login' => 'Email atau password salah']);
     }
 
     public function logout(Request $request)
